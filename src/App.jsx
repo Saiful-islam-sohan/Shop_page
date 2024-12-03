@@ -8,6 +8,7 @@ import Contact from './views/Contact'
 import SingleProduct from './views/SingleProduct'
 import Cart from './views/Cart'
 import Error from './views/Error'
+import Header from './components/Header'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-
+         <Header/>
         <Routes>
 
            <Route path='/' element={<Home/>}></Route>
