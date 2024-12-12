@@ -1,9 +1,8 @@
-
 import { NavLink } from "react-router-dom";
 import { CiShoppingCart } from "react-icons/ci";
 
 const Nav = () => {
-  const cartItemCount = 0; // Example: Cart count, dynamically fetched or managed
+  const cartItemCount = 10; 
 
   const navbar = [
     { name: "Home", value: "/" },
@@ -27,18 +26,20 @@ const Nav = () => {
 
   return (
     <div className="flex justify-center items-center">
-      <ul className="flex justify-center items-center gap-[20px] mx-10 my-5">
-        {navbar.map((item, index) => (
-          <li key={index}>
-            <NavLink to={item.value} className="text-gray-700 hover:text-blue-500 transition-all font-bold">
-              {item.name}
-            </NavLink>
-          </li>
-        ))}
-      </ul>
+      <ul className="flex flex-wrap items-center gap-6 text-sm mx-7 md:text-base">
+          {navbar.map((item, index) => (
+            <li key={index}>
+              <NavLink
+                to={item.value}
+                className="text-gray-700 hover:text-blue-500 transition-all font-bold"
+              >
+                {item.name}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
     </div>
   );
 };
 
 export default Nav;
-

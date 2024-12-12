@@ -1,9 +1,15 @@
+import HeroSection from "../components/HeroSection"
 
 
 const About = () => {
+
+  let data={
+    name:'SOHAN STORE'
+
+  }
   return (
     <div>
-        About
+        <HeroSection data={data}/>
     </div>
   )
 }
