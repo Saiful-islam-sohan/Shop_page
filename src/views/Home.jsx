@@ -1,6 +1,7 @@
 import HeroSection from "../components/HeroSection"
 import Services from "../components/Services"
 import Trusted from "../components/Trusted"
+import FeaturesProduct from "./FeaturesProduct"
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
   return (
     <div className="mt-1">
         <HeroSection data={data} />
+        <FeaturesProduct/>
         <Services/>
         <Trusted/>
     </div>
