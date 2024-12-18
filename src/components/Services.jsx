@@ -4,7 +4,7 @@ import { CiMoneyCheck1 } from "react-icons/ci";
 import { RiSecurePaymentFill } from "react-icons/ri";
 const Services = () => {
     return (
-        <div className="h-[500px] w-[70%] mx-auto mt-[50px]">
+        <div className="h-[350px] w-[70%] mx-auto mt-[50px]">
             <div className="grid grid-cols-3 gap-3">
                 <div className=" bg-gray-100 w-[300px] h-[300px] flex flex-col justify-center items-center rounded-md">
 
